@@ -6,9 +6,10 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 02:06:14 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/19 18:27:18 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/19 21:25:40 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 S_T	ft_strlcat(char *restrict dest, const char *restrict src, S_T dstsize)
 {
@@ -21,17 +22,17 @@ S_T	ft_strlcat(char *restrict dest, const char *restrict src, S_T dstsize)
 	src_len = 0;
 	src_len = ft_strlen(src);
 	dest_len = ft_strlen(dest);
-	if (size != 0)
+	if (dstsize != 0)
 	{
-		while (src[i] && (i + dest_len < size - 1))
+		while (src[i] && (i + dest_len < dstsize - 1))
 		{
 			dest[i + dest_len] = src[i];
 			i++;
 		}
 		dest[i + dest_len] = '\0';
 	}	
-	if (size < dest_len)
-		dest_len = size;
+	if (dstsize < dest_len)
+		dest_len = dstsize;
 	return (dest_len + src_len);
 }
 /*

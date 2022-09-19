@@ -6,9 +6,10 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 19:48:02 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/16 19:33:27 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/19 21:37:53 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

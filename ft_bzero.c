@@ -6,10 +6,12 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 18:03:54 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/16 19:36:19 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/19 20:08:55 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	bzero(void *s, size_t n);
+#include "libft.h"
+
+void	bzero(void *s, size_t n)
 {
 	while (n--)
 		*(char *) s++ = 0;

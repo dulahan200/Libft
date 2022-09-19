@@ -12,16 +12,16 @@ CC = gcc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 .c.o: ${CC} ${CFLAGS} -I libft.h -c $< -o ${<:.c=.o}
-all:        ${NAME}
-${NAME}:    ${OBJS} $(HEADER)
-            ar rcs ${NAME} ${OBJS}
-bonus:      ${OBJS} ${OBJSBONUS} $(HEADER)
-            ar rcs ${NAME} ${OBJS} ${OBJSBONUS}
-            ranlib ${NAME}
-            @touch $@
-clean:      
-            ${RM} ${OBJS} ${OBJSBONUS}
-fclean:     clean
-            ${RM} ${NAME}
-re:         fclean all
+all:		${NAME}
+${NAME}:	${OBJS} $(HEADER)
+			ar rcs ${NAME} ${OBJS}
+bonus:		${OBJS} ${OBJSBONUS} $(HEADER)
+			ar rcs ${NAME} ${OBJS} ${OBJSBONUS}
+			ranlib ${NAME}
+			@touch $@
+			clean:
+			${RM} ${OBJS} ${OBJSBONUS}
+fclean:		clean
+			${RM} ${NAME}
+re:			fclean all
 .PHONY: all clean fclean re
