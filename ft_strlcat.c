@@ -6,15 +6,15 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 02:06:14 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/16 21:19:00 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/19 18:27:18 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcat(char *restrict dest, const char *restrict src, size_t dstsize)
+S_T	ft_strlcat(char *restrict dest, const char *restrict src, S_T dstsize)
 {
-	size_t	i;
-	size_t	dest_len;
-	size_t	src_len;
+	S_T	i;
+	S_T	dest_len;
+	S_T	src_len;
 
 	i = 0;
 	dest_len = 0;
@@ -43,7 +43,7 @@ int	main(void)
 		str1[2] = 'c';
 		str1[3] = '\0';
 	char str2[] = "Tomi";
-	size_t size;
+	S_T size;
 	char *str1bis = malloc (20 *sizeof(char));
 	char *str2bis = malloc (20 *sizeof(char));
 	str1bis = strcpy(str1bis,str1);

@@ -6,11 +6,11 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 19:44:50 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/16 21:07:52 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/19 18:29:50 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-strnstr(const char *haystack, const char *needle, size_t len)
+char	*strnstr(const char *haystack, const char *needle, size_t len)
 {
 	int	cn;
 	int	ch;
@@ -21,7 +21,7 @@ strnstr(const char *haystack, const char *needle, size_t len)
 		return (haystack);
 	while (haystack[ch] && ch < len)
 	{
-		while (haystack[ch + cn] == needle[cn] && (ch +cn < len))
+		while (haystack[ch + cn] == needle[cn] && (ch + cn < len))
 		{
 			if (needle[cn + 1] == '\0')
 				return (&haystack[ch]);

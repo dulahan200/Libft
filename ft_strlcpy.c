@@ -6,14 +6,14 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 21:34:40 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/16 21:14:54 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/19 18:23:04 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcpy(char restrict *dest, const char *restrict src, size_t dstsize)
+S_T	ft_strlcpy(char restrict *dest, const char *restrict src, S_T dstsize)
 {
-	size_t	i;
-	size_t	size_src;
+	S_T	i;
+	S_T	size_src;
 
 	size_src = 0;
 	i = 0;
