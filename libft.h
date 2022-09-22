@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 19:24:33 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/19 22:02:50 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/20 20:18:03 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,12 @@ S_T	ft_strlcpy(char * restrict dest, const char *restrict src, S_T dstsize);
 S_T ft_strlcat(char *restrict dest, const char *restrict src, S_T dstsize);
 int	toupper(int c);
 int	tolower(int c);
+char	*strchr(const char *s, int c);
+char	*strrchr(const char *s, int c);
 
 
+
+int	memcmp(const void *s1, const void *s2, size_t n);
 
 int	atoi(const char *str);
 #endif
