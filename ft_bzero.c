@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 18:03:54 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/19 20:08:55 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/22 19:45:45 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -14,5 +14,12 @@
 void	bzero(void *s, size_t n)
 {
 	while (n--)
-		*(char *) s++ = 0;
+	*(unsigned char *) s++ = 0;
 }
+/*
+int main()
+{
+	char s[]= "patata";
+	bzero(s,3);
+	puts(s);
+}*/

@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 17:51:38 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/20 19:49:19 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/22 16:14:03 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*memchr(const void *s, int c, size_t n)
 	while (i++ < n)
 	{
 		if (*(char *)(s + i) == (char) c)
-			return ((void*)(s + i));
+			return ((void *)(s + i));
 	}
 	return (NULL);
 }

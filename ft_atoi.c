@@ -6,10 +6,10 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 13:51:54 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/19 21:27:41 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/22 16:14:19 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "fibft.h"
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

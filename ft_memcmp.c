@@ -6,17 +6,17 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 19:50:53 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/20 19:58:32 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/22 17:50:51 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
+
 int	memcmp(const void *s1, const void *s2, size_t n)
 {
-	S_T	i;
+	size_t	i;
 
 	i = 0;
-	while ((unsigned char *) (s1 + i) == (unsigned char *) (s2 +i) && i < n )
+	while ((unsigned char *)(s1 + i) == (unsigned char *)(s2 + i) && i < n)
 	{
 		i++;
 	}
@@ -25,7 +25,7 @@ int	memcmp(const void *s1, const void *s2, size_t n)
 		return (0);
 	}
 	else
-		return ((int)*(unsigned char *) (s1 + i) - *(unsigned char *) (s2 + i));
+		return ((int)*(unsigned char *)(s1 + i) - *(unsigned char *)(s2 + i));
 }
 /*
 int	main(void)

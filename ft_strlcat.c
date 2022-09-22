@@ -6,16 +6,16 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 02:06:14 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/19 21:25:40 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/22 17:49:36 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-S_T	ft_strlcat(char *restrict dest, const char *restrict src, S_T dstsize)
+size_t	ft_strlcat(char *restrict dest, t_cchar *restrict src, size_t dstsize)
 {
-	S_T	i;
-	S_T	dest_len;
-	S_T	src_len;
+	size_t	i;
+	size_t	dest_len;
+	size_t	src_len;
 
 	i = 0;
 	dest_len = 0;
@@ -44,7 +44,7 @@ int	main(void)
 		str1[2] = 'c';
 		str1[3] = '\0';
 	char str2[] = "Tomi";
-	S_T size;
+	size_t size;
 	char *str1bis = malloc (20 *sizeof(char));
 	char *str2bis = malloc (20 *sizeof(char));
 	str1bis = strcpy(str1bis,str1);

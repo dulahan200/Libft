@@ -6,12 +6,12 @@
 /*   By: hmese- <hmese-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 13:48:23 by hmese-          #+#    #+#             */
-/*   Updated: 2022/09/19 21:37:24 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/22 18:38:12 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_slen(const char *s)
+int	ft_strlen(const char *s)
 {
 	int	counter;
 
