@@ -19,8 +19,8 @@ ${NAME}:	${OBJS} $(HEADER)
 #			ar rcs ${NAME} ${OBJS} ${OBJSBONUS}
 #			ranlib ${NAME}
 #			@touch $@
-#			clean:
-#			${RM} ${OBJS} ${OBJSBONUS}
+clean:
+			${RM} ${OBJS}             # ${OBJSBONUS}
 fclean:		clean
 			${RM} ${NAME}
 re:			fclean all

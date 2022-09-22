@@ -6,12 +6,12 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 17:32:09 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/20 17:49:14 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/22 20:08:32 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-char	*strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
