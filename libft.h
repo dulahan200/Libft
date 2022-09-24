@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 19:24:33 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/22 19:48:07 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/24 19:16:54 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdio.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 typedef const char	t_cchar;
 int		ft_isalpha(int c);
@@ -37,4 +38,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(t_cchar *haystack, t_cchar *needle, size_t len);
 int		ft_atoi(t_cchar *str);
+//
+void    *ft_calloc(size_t count, size_t size);
 #endif

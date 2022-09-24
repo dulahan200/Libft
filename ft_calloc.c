@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/20 17:31:37 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/22 21:19:30 by hmestre-         ###   ########.fr       */
+/*   Created: 2022/09/24 18:46:57 by hmestre-          #+#    #+#             */
+/*   Updated: 2022/09/24 19:19:53 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	*ft_calloc(size_t count, size_t size)
 {
-	int	i;
+	void	*adress;
+	size_t	counter;
 
-	i = -1;
-	while (i++ < ft_strlen(s))
-	{
-		if (s[i] == (char) c)
-			return (&((char *)s)[i]);
-	}
-	return (NULL);
+	adress = malloc(size * count);
+	counter = 0;
+	while (counter)
+	*(unsigned char*) (adress + counter++) = 0;
+	return (adress);
 }
