@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_slen.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hmese- <hmese-@student.42barcel>       +#+  +:+       +#+        */
+/*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/01 13:48:23 by hmese-          #+#    #+#             */
-/*   Updated: 2022/09/22 18:38:12 by hmestre-         ###   ########.fr       */
+/*   Created: 2022/09/25 19:17:14 by hmestre-          #+#    #+#             */
+/*   Updated: 2022/09/25 19:27:15 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-int	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-	int	counter;
+	size_t	counter;
 
 	counter = 0;
 	while (*s != '\0')

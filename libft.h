@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 19:24:33 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/25 18:53:55 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/25 20:11:25 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
-int		ft_strlen(t_cchar *s);
+size_t	ft_strlen(const char *s);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src, size_t n);//restr des src
+void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
-size_t	ft_strlcpy(char *dest, t_cchar *src, size_t dstsize);//restr des src
-size_t	ft_strlcat(char *dest, t_cchar *src, size_t dstsize); //restr des src
+size_t	ft_strlcpy(char *dest, t_cchar *src, size_t dstsize);
+size_t	ft_strlcat(char *dest, t_cchar *src, size_t dstsize); 
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(t_cchar *s, int c);

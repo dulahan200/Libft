@@ -6,20 +6,27 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 17:31:37 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/22 21:19:30 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/25 20:21:26 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
 
-	i = -1;
-	while (i++ < ft_strlen(s))
+	i = 0;
+	while (i < ft_strlen(s))
 	{
 		if (s[i] == (char) c)
 			return (&((char *)s)[i]);
+		i++;
 	}
 	return (NULL);
 }
+/*
+int main()
+{
+char	*s1 = "pata";
+ft_strchr(s1, 3);
+}*/
