@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 17:31:37 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/25 20:21:26 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/25 21:48:54 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -22,11 +22,14 @@ char	*ft_strchr(const char *s, int c)
 			return (&((char *)s)[i]);
 		i++;
 	}
+	if ((char)c == '\0')
+		return (&((char *)s)[i]);
 	return (NULL);
 }
+
 /*
 int main()
 {
-char	*s1 = "pata";
-ft_strchr(s1, 3);
+char	*s1 = "teste";
+ft_strchr(s1, 1024);
 }*/

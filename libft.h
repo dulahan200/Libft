@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 19:24:33 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/25 20:11:25 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/25 21:52:23 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 size_t	ft_strlcpy(char *dest, t_cchar *src, size_t dstsize);
-size_t	ft_strlcat(char *dest, t_cchar *src, size_t dstsize); 
+size_t	ft_strlcat(char *dest, t_cchar *src, size_t dstsize);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(t_cchar *s, int c);
@@ -40,5 +40,5 @@ char	*ft_strnstr(t_cchar *haystack, t_cchar *needle, size_t len);
 int		ft_atoi(t_cchar *str);
 //
 void	*ft_calloc(size_t count, size_t size);
-char	*ft_strdup(const char *s1, size_t n);
+char	*ft_strdup(const char *s1);
 #endif
