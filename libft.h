@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 19:24:33 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/25 21:52:23 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/26 18:56:56 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,6 @@ int		ft_atoi(t_cchar *str);
 //
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
+//
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 #endif

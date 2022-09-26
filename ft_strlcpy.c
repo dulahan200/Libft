@@ -6,12 +6,14 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 21:34:40 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/22 17:49:56 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/09/26 19:46:43 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+// Copies up to dstsize characters of the src string
+//  onto the dest string, and null terminates it
 
-size_t	ft_strlcpy(char *restrict dest, t_cchar *restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dest, t_cchar *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	size_src;
