@@ -11,13 +11,19 @@ NAME = libft.a
 CC = gcc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
+TESTFLAGS =  -fsanitize=address -g
 .c.o: ${CC} ${CFLAGS} -I libft.h -c $< -o ${<:.c=.o}
 
 all:		$(NAME) test 
 
-test:		$(OBJS) 		
-			@${CC} main.c ${OBJS} $(HEADER)
-		#	@${CC} -Wall -Wextra -Werror main.c ${OBJS} $(HEADER)
+test:		${OBJS} 		
+			@${CC} ${CFLAGS} main.c ${OBJS} $(HEADER)
+#			@${CC} ${CFLAGS} main.c ${OBJS} $(HEADER)
+			@./a.out
+
+sani:		${OBJS} 		
+			@${CC} ${TESTFLAGS} ${CFLAGS} main.c ${OBJS} $(HEADER)
+#			@${CC} ${CFLAGS} main.c ${OBJS} $(HEADER)
 			@./a.out
 
 ${NAME}:	${OBJS} $(HEADER)
@@ -35,4 +41,4 @@ fclean:		clean
 
 re:			fclean all
 
-.PHONY: all clean fclean re 
+.PHONY: all clean fclean re test sani

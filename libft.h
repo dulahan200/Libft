@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 19:24:33 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/29 22:11:27 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/10/02 22:06:08 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <stdlib.h>
 
 typedef const char	t_cchar;
+# define PRINT(var) (printf("var = %s", var))
+# define PRINTS(var) (printf("var = %s", var)
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
