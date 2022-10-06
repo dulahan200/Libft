@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 16:46:12 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/09/29 20:03:03 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/10/05 21:51:16 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -63,6 +63,8 @@ static char	*ft_str_trim_front(char const *s1, char const *set)
 		{
 			tmp = ft_substr(res, 1, ft_strlen(res) - 1);
 			free(res);
+			if (!tmp)
+				return (NULL);
 			res = tmp;
 		}
 		else
