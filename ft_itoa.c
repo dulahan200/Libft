@@ -6,7 +6,7 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 18:27:36 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/10/06 19:52:38 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/10/07 22:50:22 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -25,7 +25,7 @@ char	*ft_itoa(int n)
 	res = malloc(sizeof(char) * 2);
 	if (!res)
 	{
-		free(res);
+		//free(res);  ///chequear si es necesario
 		return (NULL);
 	}
 	if (n < 0)
@@ -33,6 +33,11 @@ char	*ft_itoa(int n)
 		res[0] = '-';
 		res[1] = '\0';
 		res = ft_strjoin(res, ft_itoa(-n));
+		if (!res)
+		{
+	//		free(res);
+			return (NULL);
+		}
 	}
 	else if (n < 10 && n >= 0)
 	{
@@ -41,10 +46,11 @@ char	*ft_itoa(int n)
 	}
 	else if (n >= 10)
 	{
-		res = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
+//		res = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
+		return (ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10)));
 		if (!res)
 		{
-			free(res);
+		//	free(res);
 			return (NULL);
 		}
 	}

@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 18:51:11 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/10/07 19:24:40 by hmestre-         ###   ########.fr       */
+/*   Created: 2022/10/07 16:46:24 by hmestre-          #+#    #+#             */
+/*   Updated: 2022/10/07 19:33:11 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	main(void)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int	n;
-	n = -1000034;
-//	n = -2147483648;
-	char *s;
-	s = ft_itoa(n);
-	printf("%s", s);
+	unsigned int	i;
+	unsigned int	s_size;
+
+	s_size = ft_strlen(s);
+	i = 0;
+	while (i < s_size)
+	{
+		f(i, s + i);
+		i++;
+	}
 }
