@@ -6,11 +6,12 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 18:31:31 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/10/05 21:34:02 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/10/10 17:36:47 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
+// *s = initial string. start = beginning new string, len = length of string
 // must check for mallocs after calling (returns NULL)
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

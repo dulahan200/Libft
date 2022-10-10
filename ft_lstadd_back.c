@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 18:51:11 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/10/10 20:05:31 by hmestre-         ###   ########.fr       */
+/*   Created: 2022/10/10 21:10:38 by hmestre-          #+#    #+#             */
+/*   Updated: 2022/10/10 21:34:44 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	main(void)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-//	int	n;
-//	n = -123467;
-//	n = -2147483648;
-	char *s;
-s =	ft_strtrim("hola", "");
+	t_list	*tmp;
 
-//	s = ft_itoa(n);
-	printf("\n|%s|", s);
+	if (!*lst)
+		*lst = new;
+	tmp = ft_lstlast(*lst);
+	tmp -> next = new;
+
+	
+
+//	(ft_lstlast(*lst))->next = new;
+	//new->next = NULL;
 }

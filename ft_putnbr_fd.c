@@ -6,12 +6,12 @@
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 19:06:33 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/10/07 19:33:50 by hmestre-         ###   ########.fr       */
+/*   Updated: 2022/10/10 18:35:19 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{

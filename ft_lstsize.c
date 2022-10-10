@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmestre- <hmestre-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 18:51:11 by hmestre-          #+#    #+#             */
-/*   Updated: 2022/10/10 20:05:31 by hmestre-         ###   ########.fr       */
+/*   Created: 2022/10/10 20:56:10 by hmestre-          #+#    #+#             */
+/*   Updated: 2022/10/10 21:10:25 by hmestre-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	main(void)
+int	ft_lstsize(t_list *lst)
 {
-//	int	n;
-//	n = -123467;
-//	n = -2147483648;
-	char *s;
-s =	ft_strtrim("hola", "");
+	int i;
 
-//	s = ft_itoa(n);
-	printf("\n|%s|", s);
+	i = 0;
+	while (lst)
+	{
+		i++;
+		lst = lst->next;
+	}
+	return (i);
 }
