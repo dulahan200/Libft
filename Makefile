@@ -17,7 +17,8 @@ RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 TESTFLAGS =  -fsanitize=address -g
 
-.c.o: ${CC} ${CFLAGS} -I libft.h -c $< -o ${<:.c=.o}
+%.o : %.c	$(HEADER)
+	${CC} ${CFLAGS} -c $< -o $@
 
 all:		$(NAME)
 
@@ -35,12 +36,13 @@ ${NAME}:	${OBJS} $(HEADER)
 bonus:		${OBJS} ${OBJSBONUS} $(HEADER)
 			ar rcs ${NAME} ${OBJS} ${OBJSBONUS}
 #			ranlib ${NAME}
-#			@touch $@
+			@touch $@
+
 clean:
-			${RM} ${OBJS} ${OBJSBONUS}
+			${RM} ${OBJS} ${OBJSBONUS} bonus
 fclean:		clean
-			${RM} ${NAME}
+			${RM} ${NAME} 
 
 re:			fclean all
 
-.PHONY: all clean fclean re test sani bonus 
+.PHONY: all clean fclean re test sani 
